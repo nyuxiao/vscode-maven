@@ -117,12 +117,6 @@
         "icon": "$(go-to-file)"
       },
       {
-        "command": "maven.archetype.generate",
-        "title": "%contributes.commands.maven.archetype.generate%",
-        "category": "Maven",
-        "icon": "$(add)"
-      },
-      {
         "command": "maven.archetype.update",
         "title": "%contributes.commands.maven.archetype.update%",
         "category": "Maven"
@@ -371,10 +365,6 @@
           "when": "never"
         },
         {
-          "command": "maven.archetype.generate",
-          "when": "!java:projectManagerActivated"
-        },
-        {
           "command": "maven.favorites",
           "when": "isWorkspaceTrusted"
         },
@@ -420,11 +410,6 @@
           "command": "maven.view.hierarchical",
           "when": "view == mavenProjects && config.maven.view != hierarchical",
           "group": "navigation@0b"
-        },
-        {
-          "command": "maven.archetype.generate",
-          "when": "view == mavenProjects",
-          "group": "navigation@1"
         }
       ],
       "view/item/context": [
@@ -554,11 +539,6 @@
         }
       ],
       "explorer/maven": [
-        {
-          "command": "maven.archetype.generate",
-          "when": "config.maven.showInExplorerContextMenu && explorerResourceIsFolder",
-          "group": "maven@1"
-        },
         {
           "command": "maven.new.module",
           "group": "maven@2"
