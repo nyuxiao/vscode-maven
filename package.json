@@ -538,17 +538,6 @@
           "group": "maven@30"
         }
       ],
-      "explorer/maven": [
-        {
-          "command": "maven.new.module",
-          "group": "maven@2"
-        },
-        {
-          "command": "maven.project.effectivePom",
-          "when": "resourceFilename == pom.xml",
-          "group": "maven@3"
-        }
-      ],
       "maven/run": [
         {
           "command": "maven.goal.custom",
